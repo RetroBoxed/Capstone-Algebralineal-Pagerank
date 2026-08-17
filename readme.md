@@ -49,12 +49,10 @@ En este simulador, cada **navegante** representa un usuario navegando por la web
 ```
 
 ## Cómo usar
-
-1. Abre `index.html` en tu navegador
-2. Selecciona un escenario en la barra superior
-3. Observa cómo los navegantes (puntos de luz) recorren la red
-4. Haz clic en cualquier nodo para agregar un pico de tráfico manual
-5. Consulta el ranking lateral para ver la distribución de importancia
+1. Selecciona un escenario en la barra superior
+2. Observa cómo los navegantes (puntos de luz) recorren la red
+3. Haz clic en cualquier nodo para agregar un pico de tráfico manual
+4. Consulta el ranking lateral para ver la distribución de importancia
 
 ## Controles
 
