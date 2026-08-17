@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageRank - Simulador Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="grid-background"></div>
+    <canvas id="canvas"></canvas>
+
+    <!-- Menú de Escenarios Matemáticos -->
+    <div id="scenario-menu">
+        <button class="tab-btn active" onclick="loadScenario(0, this)">1. Red Original</button>
+        <button class="tab-btn" onclick="loadScenario(1, this)">2. Problema del Sumidero</button>
+        <button class="tab-btn" onclick="loadScenario(2, this)">3. Componentes Aisladas</button>
+        <button class="tab-btn" onclick="loadScenario(3, this)">4. Dilución del Voto</button>
+    </div>
+
+    <!-- Panel de información lateral -->
+    <div id="ui">
+        <h1>Simulador PageRank</h1>
+        
+        <div class="algorithm-info">
+            <h3>¿Cómo funciona?</h3>
+            <p>El algoritmo funciona como un sistema de <strong>"votos"</strong>. Si una página te enlaza, te transfiere parte de su importancia. Pero si esa página tiene muchos enlaces salientes, su voto se divide (ej. 1/2 o 1/3). Además, hay un factor de amortiguamiento: <strong>85%</strong> de probabilidad de seguir un enlace y <strong>15%</strong> de saltar al azar para evitar estancamientos.</p>
+        </div>
+
+        <hr class="divider">
+
+        <h2 id="scenario-title">1. Red Original</h2>
+        <p id="scenario-desc">El ejemplo de tu trabajo: La página A distribuye a B y C. C y D alimentan a A. A termina siendo la más importante.</p>
+        
+        <div class="score-board" id="leaderboard"></div>
+    </div>
+    
+    <div class="instruction">
+        👆 <b>Interactivo:</b> Haz clic en las páginas para simular picos de tráfico manual.
+    </div>
+
+    <div id="controls">
+        <button id="btnAdd" onclick="addSurfers(100)">+100 Navegantes</button>
+        <button id="btnReset" onclick="reset()">Reiniciar Simulación</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
