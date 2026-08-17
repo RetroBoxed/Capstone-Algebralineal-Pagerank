@@ -8,7 +8,7 @@ Simulador visual interactivo del algoritmo **PageRank**, desarrollado como proye
 - **4 escenarios matemáticos** predefinidos que ilustran casos reales del algoritmo
 - **Panel de resultados** con porcentajes de importancia actualizados dinámicamente
 - **Interactividad**: agregar picos de tráfico manual haciendo clic en los nodos
-- **Factor de amortiguamiento** α = 0.85 implementado (85% seguir enlace, 15% teletransporte aleatorio)
+- **Factor de amortiguamiento** α = 0.85 implementado (85% seguir enlace, 15% navegante aleatorio)
 - **Animaciones fluidas** en canvas con efecto de estela y transiciones suaves
 
 ## Escenarios incluidos
